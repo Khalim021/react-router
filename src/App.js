@@ -4,8 +4,8 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from "./pages/Contact";
-import Movies from "./components/Movies";
-
+import Category from "./components/Category";
+import NotFound from './pages/NotFound'
 function App() {
   return (
     <div>
@@ -15,7 +15,8 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/movies/:id" element={<Movies />} />
+          <Route path="/category/:name" element={<Category />} />
+          <Route element={<NotFound/>}></Route>
         </Routes>
       </main>
       <Footer />
