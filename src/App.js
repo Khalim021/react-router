@@ -5,7 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from "./pages/Contact";
 import Category from "./components/Category";
-import NotFound from './pages/NotFound'
+import NotFound from './pages/NotFound';
+import Ingredients from "./pages/Ingredients";
+
 function App() {
   return (
     <div>
@@ -16,7 +18,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/category/:name" element={<Category />} />
-          <Route element={<NotFound/>}></Route>
+          <Route path="/meal/:id" element={<Ingredients />} />
+          <Route element={<NotFound/>} />
         </Routes>
       </main>
       <Footer />

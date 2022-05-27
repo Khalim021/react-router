@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function CategoryItem(props) {
-  const {idCategory, strCategory, strCategoryThumb, strCategoryDescription} = props;
+  const {strCategory, strCategoryThumb, strCategoryDescription} = props;
   return (
     <div className="card" style={{width: '18rem'}}>
       <img src={strCategoryThumb} className="card-img-top" alt={strCategory} />
